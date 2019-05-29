@@ -1,0 +1,246 @@
+
+$main_color: black; 
+*
+{
+	margin:0px;
+	padding:0px;
+	font-family: 'Marcellus SC', serif;
+}
+
+@mixin section_margin{
+    margin-top: 5%; 
+    margin-bottom: 5%; 
+}
+a{
+    text-decoration: none; 
+    color: white; 
+}
+h2{
+    text-align: center; 
+    font-size: 3em; 
+}
+h1{
+    color: white; 
+    font-size: 3em;
+    margin-left: 2%;
+}
+header{
+	width: 100%;
+	background-color: $main_color;
+	line-height: 100px;
+	height: 100px;
+    position: fixed;
+    top: 0px; 
+    z-index: 10;
+}
+#ImePrezime{
+	display: flex;  
+	width: 50%;
+    float: left; 
+}
+#slika{
+	padding-top: 10px;
+}
+
+nav{
+	display: flex; 
+	justify-content: flex-end;
+	width: 50%;  
+}
+.meniDeo p a{
+    color:white; 
+	margin-left: 20px;
+	margin-right: 20px;
+	text-decoration: none; 
+    color: white; 
+    &:hover{
+        border-bottom: 3px solid white;  
+        font-size: 1.1em;
+    }
+    
+}
+
+.hr{
+    height: 1px;
+    background: black;
+    width: 100%;
+    overflow: hidden;
+}
+
+/****ABOUT ME****/
+main{
+	width: 100%; 
+}
+#AboutMe{
+	width: 100%;
+	display:flex; 
+	justify-content: center; 
+    @include section_margin; 
+    
+    margin-top:150px;
+    
+    &_Text{
+        width: 30%; 
+    
+        p{  
+	       font-size: 2em; 
+	       text-align: center;
+            margin-top: 5%; 
+        }
+    }
+}
+#profil {
+	width: 30%; 
+	margin-right: 10%; 
+    
+    img{
+        width: 100%;
+        border: 3px solid $main_color; 
+    }
+    
+} 
+/*****PROJEKAT******/
+#Projects{  
+	width: 100%; 
+	justify-content: center; 
+    
+    @include section_margin;
+    
+    &_row{
+        display: flex; 
+        justify-content: center;
+    }
+}
+.projectStyle{
+	margin: 3%; 
+	position: relative; 
+}
+.over_image{
+	position:absolute;
+	top: 0px;
+	height: 300px;
+	width: 300px;
+	opacity: 0;
+	color: white; 
+	text-align: center; 
+	transition: .5s ease;
+	background-color: $main_color; 
+    
+    p{
+        margin: 10%;  
+    }
+}
+.button a{
+	text-decoration: none; 
+	color: white; 
+	text-align: center; 
+	font-size: 2em; 
+    border: 1px solid white;
+    padding: 2%; 
+    
+    &:hover{
+        color: $main_color;
+        background-color: white;
+    }
+}
+.projectStyle:hover .over_image{
+	opacity:0.9;
+}
+/*******SKILLS*********/
+#Skills{
+    width: 100%; 
+    @include section_margin;
+    
+    &_two{
+        display: flex; 
+        flex-direction: row;
+        justify-content: center; 
+        width: 100%; 
+    }
+}
+.skill_single{
+    width: 25%;  
+    border: 1px solid $main_color; 
+    margin: 3%; 
+    padding: 1%;
+    
+    h3{
+        text-align: center; 
+        border-bottom: 1px solid $main_color;
+    }
+    
+    p{
+        margin: 3%; 
+        font-size: 1.5em; 
+        text-align: center;
+    }
+}
+/*******BLOG**********/
+#Blog{
+    width: 100%; 
+    @include section_margin; 
+    
+    p{
+        text-align: center; 
+        margin: 3%; 
+        font-size: 1.5em; 
+    }
+    
+    &_all{
+        display: flex; 
+        justify-content: center; 
+    }
+    
+    &_block{
+        width: 30%; 
+        border: 1px solid $main_color; 
+        margin: 3%; 
+        padding: 2%; 
+        
+        h3{
+            text-align: center; 
+            margin-bottom: 10%; 
+        }
+        p{
+            text-align: center; 
+        }
+        a{
+            text-decoration: none; 
+            color: $main_color;
+            text-align: center; 
+            
+            &:hover{
+                border-bottom: 1px solid $main_color; 
+            }
+        }
+    }
+}
+/*******FOOTER*********/
+footer{
+    width: 100%; 
+    min-height: 150px; 
+    background-color: $main_color; 
+    position: relative; 
+    
+    p{
+        text-align: center;
+        margin: 1%; 
+        color: white;
+    }
+}
+#social_media{
+    display: flex; 
+    justify-content: center; 
+    width: 100%; 
+    
+    a i{
+        font-size: 2em; 
+        color: white; 
+        margin: 10px;
+    }
+}
+#small{
+    font-size: 0.8em;  
+    margin-top: 30px;  
+    text-align: center; 
+}

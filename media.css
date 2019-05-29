@@ -1,0 +1,104 @@
+@media only screen and (max-width: 1300px){
+    #AboutMe_Text p{
+        font-size: 1.5em; 
+}
+@media only screen and (max-width: 1040px){
+    h1{
+        font-size: 2.5em;
+    }
+    h2{
+        font-size: 2em; 
+    }
+    #AboutMe_Text p{
+        font-size: 1em; 
+    }
+    #Projects_row{
+        flex-direction: column; 
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    
+    header{
+        height: 150px; 
+    }
+    #ImePrezime{
+        width: 100%; 
+        justify-content: center; 
+        height: 75px;
+    }
+    nav{
+        width: 100%; 
+        justify-content: center; 
+        height: 75px;
+    }
+    #AboutMe{
+        margin-top: 200px;
+    }
+    #AboutMe_Text p{
+        font-size: 0.8em;
+    }
+    #slika{
+        display: none; 
+    }
+    
+    .meniDeo{
+        margin: 0px;
+    }
+    
+    .skill_single p{
+        font-size: 1em;  
+    }
+    .skill_single h3{
+        font-size: 1em;  
+    }
+    #Blog p{
+        font-size: 1em; 
+    }
+    #Blog h3{
+        font-size: 1em; 
+    }
+    footer{
+        min-height: 100px; 
+        margin-top: 0px; 
+    }
+    
+}
+
+@media only screen and (max-width: 600px){
+   
+    #slika{
+        display: none; 
+    }
+    
+    #profil{
+        display: none; 
+    }
+    #AboutMe{
+         margin-top: 200px;
+    }
+    #AboutMe_Text{
+        width: 50%;  
+    }
+    #AboutMe_Text p{
+        font-size: 0.8em; 
+        margin: 5%; 
+    }
+    #Skills_two{
+        flex-direction: column;
+        align-items: center; 
+    }
+    .skill_single {
+        width: 80%;    
+    }
+    #Blog_all{
+        flex-direction: column; 
+        align-items: center; 
+    }
+    
+    #Blog_block{
+        width: 80%;
+    }
+   
+}
